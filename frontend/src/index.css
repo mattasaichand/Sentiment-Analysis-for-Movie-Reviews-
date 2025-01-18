@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #250448ca;
+  }
+
+h2 {
+    Color:rgba(141, 221, 241, 0.997);
+    font-size:40px ;
+    list-style-type: armenian;
+    }
+  
+  textarea {
+    width: 95%;
+    height: 100px;
+    margin: 10px 0;
+    color: rgb(236, 235, 240);
+    background-color: #030304ca;
+  }
+  
+button {
+    padding: 10px 100px;
+    font-size: 30px;
+    cursor: pointer;
+    color: rgb(110, 28, 168);
+    align-items: x10;
+    color:rgba(5, 60, 154, 0.944);
+    background-color: #0fecd6ec;
+    border: #e74322e8;
+    text-decoration: firebrick;
+    display: inline-block;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 100;
+  }
+
+
+  

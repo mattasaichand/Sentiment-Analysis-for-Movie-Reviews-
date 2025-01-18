@@ -27,7 +27,7 @@ Containerization: Docker
 ############################################################################################################################
 
 
-# Python Full Stack Assessment
+# Python Full Stack
 
 ## Objective
 Develop a Python web application to detect the sentiment of movie reviews. The app should include a ReactJS-based frontend that calls a FastAPI Python backend, which utilizes cohere free LLM API for sentiment analysis.

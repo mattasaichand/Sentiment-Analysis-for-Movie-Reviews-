@@ -67,3 +67,30 @@ _(Feel free to deliver your own way of this UX but make sure sentiment analysis 
 1. **(OPTIONAL ONLY) List of Sentiment Analyzed** (UI-2)
 ![List of Sentiment Analyzed](UXScreen2.png)
 
+############################################################################################################################
+############################################################################################################################
+
+**Project Structure**
+movie-sentiment-app/
+│
+├── frontend/          # ReactJS Frontend
+├── backend/           # FastAPI Backend
+├── README.md          # Documentation
+└── docker-compose.yml # Docker Compose for containerized setup
+
+**Commands Summary**
+**Command	Description**
+>> npm install	Install frontend dependencies
+>> npm start	Start the React frontend server
+>> pip install -r requirements.txt	Install backend dependencies
+>> uvicorn main:app --reload	Start FastAPI backend
+>>
+>> #############################
+>> Docker 
+>> docker-compose up --build	Run the app with Docker Compose
+
+
+
+
+
+

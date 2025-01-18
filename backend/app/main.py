@@ -6,7 +6,6 @@ import cohere
 import time
 app = FastAPI()
 
-# Allow frontend to communicate with the backend
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:3000"],  # Replace with your frontend's URL
@@ -15,7 +14,6 @@ app.add_middleware(
     allow_headers=["*"],  # Allow all HTTP headers
 )
 
-# Define request and response schemas
 class SentimentRequest(BaseModel):
     review: str
 
@@ -28,16 +26,10 @@ async def analyze_sentiment(data: SentimentRequest):
         # print(review_text,"review_text")
         raise HTTPException(status_code=400, detail="Review text is required")
     try:
-        # Simulate delay
         time.sleep(10)     
 
-        # Initialize the client with your API key
         co = cohere.Client('vtqC91dwU7AF0W7wmlEsVfAdqpVjiHnXbJDRhTAI')
 
-        # Sample movie review to classify
-        # review = "The movie was an absolute masterpiece with stunning visuals and a gripping storyline."
-        
-        # Call the classify endpoint
         response = co.classify(
             model='large',  # Using a pre-trained classification model
             inputs=[review_text],
@@ -60,7 +52,7 @@ async def analyze_sentiment(data: SentimentRequest):
         )
         sentiment = response["choices"][0]["text"].strip()
         return {"sentiment": sentiment}
-        # Simulate sentiment analysis (replace with real logic)
+        
         if not request.review:
             raise ValueError("Review text cannot be empty")
         analysis_result = "Positive" if "good" in request.review else "Negative"

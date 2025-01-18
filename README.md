@@ -16,6 +16,13 @@ movie-sentiment-app/
 >> #############################
 >> Docker 
 >> docker-compose up --build	Run the app with Docker Compose
+>
+**Technologies Used**
+Frontend: ReactJS
+Backend: FastAPI
+Sentiment Analysis: Cohere API
+Database: SQLite (or your preferred database)
+Containerization: Docker
 
 ############################################################################################################################
 
